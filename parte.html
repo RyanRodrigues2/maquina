@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <body>
+        <div class="container" id="form-container">
+            <div class="header">
+                <img src="imagens/Logo Empresa menor.jpeg" alt="Logo da Empresa">
+                <h1>OBJETIVO DESAFIADOR - UNIPESSOAL LDA</h1>
+            </div>
+    
+            <div class="company-info">
+                <h2>Informações da Empresa</h2>
+                <p><strong>NIF:</strong> 517514281</p>
+                <p><strong>Endereço:</strong> 
+                    RUA SENHORA DA GRAÇA 3 2DTO ALVERCA DO RIBATEJO 2615-387 ALVERCA DO RIBATEJO</p>
+                <p><strong>Telefone:</strong> -</p>
+                <p><strong>Email:</strong> geral.objetivodesafiador@gmail.com</p>
+            </div>
+    
+            <div class="client-info">
+                <h2>Informações do Cliente</h2>
+                <form id="company-form">
+                    <label for="client-name">Nome:</label><br>
+                    <input type="text" id="client-name" name="client-name"><br><br>
+                    <label for="client-address">Endereço:</label><br>
+                    <input type="text" id="client-address" name="client-address"><br><br>
+                    <label for="client-nif">NIF:</label><br>
+                    <input type="text" id="client-nif" name="client-nif"><br><br>
+    
+                    <div class="work-info">
+                        <h2>Informações do Trabalho</h2>
+                        <label for="work-goals">Objetivos do Trabalho:</label><br>
+                        <textarea id="work-goals" name="work-goals" rows="4" cols="50"></textarea><br><br>
+                        <label for="deadline">Prazo de Execução:</label><br>
+                        <input type="date" id="deadline" name="deadline"><br><br>
+                    </div>
+    
+                    <div class="btn-container">
+                        <button type="button" onclick="downloadPDF()">Baixar PDF</button>
+                    </div>
+                </form>
+            </div>
+    
+            <div class="table-container">
+                <h2>Condições de Pagamento</h2>
+                <table>
+                    <tr>
+                        <th>Opção</th>
+                        <th>Descrição</th>
+                        <th>12.200+6%Iva em Vigor</th>
+                    </tr>
+                    <tr>
+                        <td>Pagamento 100%</td>
+                        <td>Pagamento após adjunção</td>
+                        <td>12.932</td>
+                    </tr>
+                    <tr>
+                        <td>Pagamento em Parcelas</td>
+                        <td>50% / 40% / 10%</td>
+                        <td>6.466 / 5.172.8 / 1.293.2</td>
+                    </tr>
+                    
+                </table>
+            </div>
+        </div>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+        <script src="script.js"></script>
+    
+</body>
+</html>
